@@ -1,13 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-
-html{
-  font-Arial, sans-serif,
-  
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext);
 
 body{
   margin: 0;
-}
+  font-family: 'Roboto', sans-serif;
+}            
 
 nav,
 article,
@@ -30,9 +26,7 @@ strong {
 }
 h1 {
   margin: .67em 0;
-  font-size: 32px;
-  font-family: 'Lobster', cursive;
-  
+  font-size: 2em;
 }
 img {
   border: 0;
@@ -86,9 +80,10 @@ td,th {
   float:none;
   overflow: auto;
   width: 1150px;   
+  max-width: 100%;
   box-sizing: border-box;  
-  -moz-box-sizing: border-box;
-  }
+  -moz-box-sizing: border-box;  
+  } 
   
 .container-fluid {
   padding-right: 10px;
@@ -305,18 +300,4 @@ right: 16.66666667%;
 }
 .col-offset-0 {
   margin-left: 0;
-}
-
-
-.label-info {
-
-}
-.label-success {
-
-}
-.label-warning {
-
-}
-.label-error {
-
 }

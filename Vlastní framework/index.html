@@ -15,90 +15,91 @@
     
   </head>
   <body>
- <div class="container-example">
-  <h1>Container</h1>
- </div>
- 
- <div class="container-fluid-example">
-  <h1>Container-fluid</h1>
- </div>
- 
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- <div class="col-1 col-example">
-  <h1>.col-1</h1>
- </div>
- 
+  
+ <section>
+  <h1>Ukázka containerů:</h1>
+   <div class='container'>
+   <h3>Container - fixní šířka:</h3>
+   </div>
+   <div class="container col-example">.container</div>   
+   <div class='container'><h3>Container - Fluidní šířka (100%)</h3></div>
+   <div class="container-fluid col-example">.container-fluid</div>
+ </section> 
  <hr>
-      
-    <div class="col-9 col-example">
-    <h1>.col-9</h1>
+ 
+ <section>
+   <h1>Užití grid systému:</h1>
+   <div class='container'>
+     <p>Grid systém je možno použít kdekoliv, kde od něj očekáváme dělení stránky.</p>
+     <p>V klasickém Containeru:</p>
    </div>
-   <div class="col-3 col-example">
-    <h1>.col-3</h1>
+   <div class="container">
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
+        <div class="col-1 col-example">.col-1</div>
    </div>
-  
-  <hr>
-
-  <div class="col-6 col-example">
-      <h1>.col-6</h1>
-    </div>
+   <div class='container'>
+    <p>Ve fluidním containeru:</p>
+   </div>
+   <div class="container-fluid">
+        <div class="col-6 col-example">.col-6</div>
+        <div class="col-6 col-example">.col-6</div>
+   </div>
+   <div class='container'>
+    <p>Sloupce z Grid systému lze kombinovat.</p>
+    <div class="col-3 col-example">.col-3</div>
+    <div class="col-6 col-example">.col-6</div>
+    <div class="col-3 col-example">.col-3</div>
+   </div>
+   <div class='container'>
+    <p>Sloupce z Grid systému lze vnářet do sebe.</p>
+    <div class="col-3 col-example">.col-3</div>
     <div class="col-6 col-example">
-      <h1>.col-6</h1>
+       .col-6<br>
+       <div class="col-6 col-example">.col-6</div>
+       <div class="col-6 col-example">.col-6</div>
     </div>
-    
-    <hr>
-    <div class="container-fluid">
-      <div class="col-3 col-example">
-        <h1>.col-3</h1>
-      </div>
-      <div class="col-3 col-offset-3 col-example">
-        <h1>.col-offset-3</h1>
-      </div>
-      </div>
-
-
- 
- 
- 
-  
-  
-  <hr>
-  
-  
-
-
-
+    <div class="col-3 col-example">.col-3</div>
+   </div>   
+   <div class='container'>
+    <p>Pomocí Grid systému lze tedy vytvořit strukturu website velice rychle a efektivně.</p>
+    <div class='col-12 col-example' style='height: 300px;'>.col-12</div>
+    <div class='col-8 col-example' style='height: 500px;'>.col-8</div>
+    <div class='col-4 col-example' style='height: 250px;'>.col-4</div>
+    <div class='col-12 col-example'>.col-12</div>
+   </div>
+   <div class='container'>
+    <p>Grid systém zvládne ovšem udělat i složitější struktury:</p>
+    <div class='col-12 col-example' style='height: 300px;'>.col-12</div>
+    <div class='col-8 col-example' style='height: 500px;'>.col-8<br>
+        <div class='col-6 col-example'>.col-6<br>
+          <div class='col-12 col-example'><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p></div>
+        </div>
+        <div class='col-6 col-example'>.col-6<br>
+          <div class='col-12 col-example'>
+            <p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p>
+            <p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p>
+          </div>
+        </div>
+    </div>
+    <div class='col-4 col-example' style='min-height: 250px;'>.col-4<br><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p></div>
+    <div class='col-12 col-example'><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p></div>
+   </div>
+ </section> 
+ <hr>
+  <div class='container'>
+    <div class='col-6'>
+      <div class='container col-example'></div>
+    </div>
+  </div>
   </body>
 </html>
