@@ -107,6 +107,223 @@
     <div class='col-4 col-example' style='min-height: 250px;'>.col-4<br><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p></div>
     <div class='col-12 col-example'><p>Lorem ipsum dolor sit amet consectetuer congue congue Curabitur interdum ante. Semper.</p></div>
    </div>
+   <h1>Formuláře:</h1>
+   <div class="container" style="border: 2px solid #000;">
+    <p>Nalevo je zobrazen klasický formulář a napravo formulář v řádce.</p>
+    <div class="col-6">
+      <form action="submit.php" method="post">
+                      <input required="required" pattern=".{1,} .{1,}" type="text" name="name" placeholder="Jméno Příjmení"><br>
+                      <input required="required" type="email" name="email" placeholder="vas@email.cz"><br>
+                      <input required="required" pattern=".{4,32}" type="text" name="subject" placeholder="Předmět"><br>
+                      <textarea name="zprava" placeholder="Vaše zpráva ..."></textarea><br>
+                      <input type="submit" class="odeslat pull-right" value="Odeslat">
+      </form>
+     </div>
+
+     <div class="col-6">
+      <form class="form-inline">
+  <div>
+    <label for="Jméno">Jméno</label>
+    <input type="text" class="form-control" id="Jmeno2" placeholder="Vaše Jméno">
+  </div>
+  <div>
+    <label for="Email">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Váš email">
+  </div>
+  <button type="submit" class="btn btn-default">Odeslat</button>
+
+     </div>
+   </div>
+   
+   <hr>
+   <div class="container" style="border: 2px solid #000;">
+    <p>Nalevo je zobrazeno základní textové pole a napravo textarea.</p>
+    <div class="col-6">
+      <input type="text" class="form-control" placeholder="Zadejte text">
+    </div>
+    <div class="col-6">
+    <textarea class="form-control" rows="5" placeholder="Textarea"></textarea>
+    </div>
+   </div>
+   
+   <hr>
+   
+   <h1>Zaškrtávací políčka a volba možností</h1>
+   <div class="container">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="">První možnost
+      </label>
+    </div>
+    <div class="checkbox disabled">
+      <label>
+        <input type="checkbox" value="" disabled>Druhá možnost je zablokována
+     </label>
+    </div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="volbamoznosti" id="moznost1" value="moznost1" checked>První možnost
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="volbamoznosti" id="moznost2" value="moznost2">Druhá možnost
+  </label>  
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="volbamoznosti" id="moznost3" value="moznost3" disabled>Třetí možnost je zablokována
+  </label>
+   </div>
+
+   </div>
+   
+   <hr>
+   <div class="container">
+    <label class="checkbox-inline">
+      <input type="checkbox" id="pole1" value="moznost1"> 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" id="pole2" value="moznost2"> 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" id="pole3" value="moznost3"> 3
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="volbavradce" id="volbavradce" value="moznost1"> 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="volbavradce" id="volbavradce2" value="moznost2"> 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="volbavradce" id="volbavradce3" value="moznost3"> 3
+    </label>
+  </div>
+  
+   <hr>
+   
+   
+   <h1>Tabulky</h1>
+   <div class="container" >
+    <p>Neohraničená tabulka:</p>
+    <div class="col-12">
+      <table>
+        <tr>
+          <th>#</th>
+          <th>Jméno</th>		
+          <th>Příjmení</th>
+          <th>Přezdívka</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>Pavel</td>		
+          <td>Otrlý</td>
+          <td>Otrlos</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Kuba</td>		
+          <td>Havel</td>
+          <td>Havlos</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Jan</td>		
+          <td>Novák</td>
+          <td>Novas</td>
+        </tr> 
+      </table>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="container">
+    <p>Ohraničená tabulka:</p>
+     <div class="col-12">
+      <table class="table-bordered">
+        <tr>
+          <th>#</th>
+          <th>Jméno</th>		
+          <th>Příjmení</th>
+          <th>Přezdívka</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>Pavel</td>		
+          <td>Otrlý</td>
+          <td>Otrlos</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Kuba</td>		
+          <td>Havel</td>
+          <td>Havlos</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Jan</td>		
+          <td>Novák</td>
+          <td>Novas</td>
+        </tr> 
+      </table>
+   </div>
+  </div>
+  
+  <hr>
+  <div class="container">
+    <p>Pomocné třídy:</p>
+    <div class="col-12">
+      <table>
+        <tr class="info">
+          <th class="active">#</th>
+          <th class="active">Jméno</th>		
+          <th class="active">Příjmení</th>
+          <th class="active">Přezdívka</th>
+        </tr>
+        
+        <tr>
+          <th>1</th>
+          <td>Karel</td>
+          <td>Vomáčka</td>
+          <td>Vomáčkos</td>
+        </tr>
+        <tr class="success">
+          <th>2</th>
+          <td>Pavel</td>		
+          <td>Otrlý</td>
+          <td>Otrlos</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Josef</td>
+          <td>Hrubý</td>
+          <td>Hrubajs</td>
+        </tr>
+        <tr class="danger">
+          <th>4</th>
+          <td>Kuba</td>		
+          <td>Havel</td>
+          <td>Havlos</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>Matouš</td>
+          <td>Horák</td>
+          <td>Horas</td>
+        </tr>
+        <tr class="warning">
+          <th>6</th>
+          <td>Jan</td>		
+          <td>Novák</td>
+          <td>Novas</td>
+        </tr> 
+      </table>
+    </div>
+  </div>
+   
+   
  </section> 
  <hr>
   

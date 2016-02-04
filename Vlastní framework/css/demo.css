@@ -14,3 +14,35 @@ h1 {
   float: none;
   clear: both;
 }
+
+input, textarea {
+  width:50%;
+  height:30px;
+  margin-top:10px;
+  border: 1px solid #000;
+  background-color:#FFF;
+  color: #000;
+  font-family: 'Roboto', sans-serif;  
+  padding: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+  
+  textarea {
+    min-height: 150px;
+    
+}
+.odeslat{
+  margin-top: 5px;
+  border-radius:15px;
+  background: #a5cc33;
+  color:#000;
+  height:45px;
+  width:100px; 
+}
+
+table{
+  width:100%;
+}
+td{
+  text-align:center;
+}
